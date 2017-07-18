@@ -1,0 +1,159 @@
+/*=============
+	Main
+=============*/
+body { font-family: 'Open Sans', sans-serif; color:#44573D; margin: 80px 0; }
+footer { background-color: #C7E8B7; color: white; margin-top:50px; padding: 15px;}
+.content {padding:15px 10px 15px 25px;}
+.title {font-size:2.5em; margin:0 0 25px 10px;}
+.introheader {font-weight: bold; padding-top:25px; font-size:1.25em;}
+.missionstatment {margin-top:3%;}
+
+/*=============
+	Header
+=============*/
+.header-top { padding-top: 20px; }
+.header-left {margin: 2% 0; text-align:center;}
+.header-right { }
+.header-image { height: auto; width: 250px; margin-top: 20px;}
+.header-image-isa {height: auto; width: 120px; margin-top: 20px;}
+
+/*=============
+	Nav
+=============*/
+.nav li {margin: 3px}
+.nav li a {padding: 5px 5px}
+.navbar {margin-bottom: 0;}
+.navbar-right {margin:20px 5%;}
+.navbar-brand {padding: 10px 15px;}
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover{ border-radius: 15%; background-color:hsla(120, 22%, 65%, 0.28);}
+.container .navbar-collapse { margin-right: 0; margin-left:0;}
+.navbar-toggle {margin-top: 30px;}
+#myNavbar {}
+
+/*=============
+	logo
+=============*/
+#logo {height: 60px; width: 275px;}
+
+/*=============
+	carousel
+=============*/
+.slider-img { margin: 0 20%; max-height: 500px; width: 60%;}
+#homeSlider {height: 25%}
+.carousel-indicators li{border: 5px solid #93ba93;}
+.carousel-indicators li.active {border: 5px solid #96F668;}
+.carousel-inner>.item>img {max-width: 85%; max-height: 350px; margin: auto;}
+.arrow {margin: 50% 25% 50% 0; font-size:50px;}
+.fa-arrow-left:before { color: #93ba93; }
+.fa-arrow-right:before { color: #93ba93; }
+.carousel-control.left { background-image: linear-gradient(to right,rgba(110, 152, 110, 0.5) 0,rgba(0,0,0,.0001) 100%) }
+.carousel-control.right { background-image: linear-gradient(to left,rgba(110, 152, 110, 0.5) 0,rgba(0,0,0,.0001) 100%) }
+
+/*=============
+	social
+=============*/
+.social {height:30px; width:30px; float: right; margin: 0 3px;}
+
+/*=============
+	credit-score
+=============*/
+.credit-score {padding:0 5%; height:100%; width:95%; }
+.cs-iframe { height:210px; width:100%; margin-top: 22%; }
+.video-blurb {text-align:center; font-style: italic;}
+
+/*=============
+	lists/tables
+=============*/
+.no-bullet {list-style-type: none;}
+.tick, .cross { width:30px; font-size:20px; margin-bottom: 10px;}
+.tick {color:#49af46;}
+.cross {color: #FF2C2C;}
+.list-title {font-weight: bold; font-size:16px; line-height: 75%;}
+.table>tbody>tr>td { border: none; padding: 0 20px; }
+.list-content>p {margin:0; line-height:2.3;}
+
+
+
+/*=============
+	forms
+=============*/
+.calc { text-align:center; border-radius: 5px; width: 80%;}
+.error {color:red;}
+.inputyears {padding-left:10px;}
+span.inputcurrency::before {float: left; padding: 3px 4px 3px 3px; }
+table {width: 100%;}
+tr {min-height: 50px;}
+td {padding: 5px;}
+th {padding-left:20px;  padding-top: 20px;}
+.contactform {background-color: #f3f3f3; margin-top: 100px; padding: 25px; border-radius: 20px; text-align: center;}
+.alert-danger {border: none; width: 175px;}
+.feedbackinput {width:90%;}
+.feedbackarea {width: 90%; min-height: 150px;}
+.isacal { width:100%; display:table; }
+.isacalrow {display:table-row;}
+.isacalcell {width:33%; display: table-cell; text-align: center; padding-top: 15px;}
+.calcheadings {font-weight: bold; font-size:1em; text-align:center;}
+.sectiontitle {font-weight: bold; margin:20px 0 10px 0; font-size:1.25em; text-align:center; padding-bottom: 10px;}
+.results {text-align:center;}
+.values {font-size: 2em;}
+.calcarea {border-radius: 20px; background-color: #f3f3f3; margin-top: 75px;}
+
+/*=============
+	audio
+=============*/
+.podcast {margin-top: 50px;}
+.audioclip {margin-bottom: 20px;}
+
+
+/*====== Small desktop/laptop======*/
+@media screen and (max-width: 1024px) 
+{   
+
+.header-image { display:none;}
+.navbar-right { margin:20px 0;}
+#logo { margin:0;}
+.tips-title {text-align:center;}
+
+}
+
+/*======= Tablets=================*/
+@media screen and (max-width: 767px) 
+{   
+/*=============
+	Nav
+=============*/
+	.navbar-brand {height: auto;}
+
+/*=============
+	logo
+=============*/
+	#logo {height: 50px; width: 220px; margin-left:10px;}
+
+/*=============
+	carousel
+=============*/
+	.slider-img { margin: 0; width:100%; height: auto; min-height: 150px; }
+	.carousel-inner {height:auto; min-height:150px;}
+
+/*=============
+	credit-score
+=============*/
+
+	.credit-score {padding:2%;}
+	.cs-iframe {height:250px; width:100%;}
+}
+
+/*=========== Mobile screens=======*/
+@media screen and (max-width: 400px) 
+{   
+/*=============
+	logo
+=============*/
+	#logo {height: 35px; width: 150px; margin:10px 0;}
+}
+
+/*=============
+	forms
+=============*/
+.calcarea { margin-top: 0;}
+
