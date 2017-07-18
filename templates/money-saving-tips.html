@@ -1,0 +1,94 @@
+<section class="container content">	
+			<div class="col-md-7" ng-controller="MoneySavingTipsController">
+				<h4 class="title">Money-Saving Tips</h4>
+			  
+			  <p class="introheader">Top money-saving tips to help you shop smarter</p>
+			  <p>Wondering how to save money on your shopping? From your weekly food 
+			  shop to your next gadget purchase, here are a few smart, simple, money saving tips.</p>
+
+			  <uib-accordion close-others="oneAtATime">
+
+			    <uib-accordion-group heading="Remember your rights" is-open="status.isFirstOpen">
+			      <p> As a consumer, you have the right to complain about problems with any goods or services you’ve purchased.</p>
+			    </uib-accordion-group>			    
+			    
+			    <uib-accordion-group heading="Best ways to save money on shopping">
+			     <p> For many of us, shopping takes up a large chunk of the monthly budget. Whether you’re trying to save money 
+			     on food shopping, or cut the cost of buying online, we’ve pulled together a few tips to help you.</p>
+			        <ul>
+			          <li><p><span class=”list-titles”>Work out what you spend your money on</span>Make a list of everything you buy 
+			          in a typical month. This will make it easier to work out where you can cut back.</p></li>
+			          
+			          <li><p><span class=”list-titles”> Shop around.</span>Check out the competition and compare prices. For example, 
+			          it might be cheaper to go to a different supermarket, or buy your electronics from a different website.</p></li>
+			          
+			          <li><p><span class=”list-titles”> Beware of special offers.</span>Vouchers, special offers and cashback deals were 
+			          invented to make you spend more, not less. Never buy something you don’t need just because it’s on offer.</p></li>
+			          
+			          <li><p><span class=”list-titles”> Don’t impulse buy.</span>Think carefully before making a purchase - especially if 
+			          it’s expensive. At the very least sleep on it! It might seem less appealing in the morning.</p></li>
+			          
+			          <li><p><span class=”list-titles”> Check reviews.</span>If you’re not sure about a product, check online to see if 
+			          there are any reviews. Just type its name into a search engine, followed by ‘review’.</p></li>
+			        </ul>
+			    </uib-accordion-group>
+
+			    <uib-accordion-group heading="Using your credit or debit card">
+			      <p> If something goes wrong, buying on your credit or debit card gives you greater protection than cash or cheque.</p>
+			      <p> Credit cards offer the most protection – as long as the item or service you bought cost over £100, you can claim against 
+			      your card provider under Section 75 of the Consumer Credit Act to get your money back.</p>
+			    </uib-accordion-group>
+			    
+			    <uib-accordion-group heading="Shopping and paying safely online">
+			      <p> Online shopping is a great way to compare prices, pick up bargains and track down those hard-to-find gifts – and with a 
+			      bit of know-how anyone can do it safely.</p>
+			    </uib-accordion-group>
+			    
+			    <uib-accordion-group heading="Spend less money than you earn">
+			      <p> If you earn £30,000/year and you spend £31,000/year, you’ll end up in a spiral of debt that’s hard to walk away from. If you 
+			      spend exactly as much as you earn every year, you’ll never be prepared for emergencies or major life changes. Spending less than you earn 
+			      allows you the freedom to save, to prepare for the future, and deal with the inevitable crises that life throws at you. The bigger the gap 
+			      between your income and your spending, the better. </p>
+			    </uib-accordion-group>
+			    
+			  </uib-accordion>
+			</div>
+
+			<div class="col-md-5">
+				<div class="contactform" ng-controller="MoneySavingTipsController"> 
+					<h4 class="sectiontitle">Penny for your thoughts!</h4>
+					<p>If you have any questions or concerns, please fill in the below
+					form and we'll get back to you promptly.</p>
+					<p> Alternatively, please feel free to share any of your awesome money saving tips!</p> 
+
+					<form name="contactForm" novalidate>
+						<!-- NAME -->
+						<div ng-class="{'form-error':contactForm.name.$dirty && contactForm.name.$invalid, 'form-group':true}">
+							<input type="text" class="feedbackinput" name="name" ng-model="formData.name" placeholder="Name" ng-minlength="3" required="" />
+							<div ng-messages="contactForm.name.$error" ng-show="contactForm.name.$dirty" >
+							<div class="alert alert-danger" ng-message="minlength">Name too short</div>
+							<div class="alert alert-danger" ng-message="required">Required Name</div>
+						</div>
+						</div>
+						<!-- EMAIL -->
+						<div ng-class="{'form-error':contactForm.email.$dirty && contactForm.email.$invalid, 'form-group':true}">
+							<input type="email" name="email" class="feedbackinput"  ng-model="formData.email" placeholder="Email Address" required />
+							<div ng-messages="contactForm.email.$error" ng-show="contactForm.email.$dirty">
+								<div class="alert alert-danger" ng-message="email">Invalid Email</div>
+								<div class="alert alert-danger" ng-message="required">Your Email is required</div>
+							</div>
+						</div>
+						<!-- Feedback -->
+						<div ng-class="{'form-error':contactForm.feedback.$dirty && contactForm.feedback.$invalid, 'form-group':true}" required="">
+							<textarea name="feedback" class="feedbackarea" ng-model="formData.feedback" placeholder="Feedback" required></textarea>
+							<div ng-messages="contactForm.feedback.$error" ng-show="contactForm.feedback.$dirty" >
+								<div class="alert alert-danger" ng-message="required">Please fill in your feedback</div>
+							</div>
+						</div>
+						<!-- SUBMIT BUTTON -->
+						<input class="submitbutton" type="submit" ng-click="processForm()" ng-disabled="contactForm.$invalid" value="Submit" />
+					</form>
+				</div>
+			</div>
+
+		</section>
