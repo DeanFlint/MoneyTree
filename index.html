@@ -12,21 +12,21 @@
 	<meta name="author" content="Money Tree">
 
 	<!-- CSS -->
-	<link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
-	<link rel="stylesheet" href="/bower_components/uib/dist/ui-bootstrap-csp.css">
-    <link rel="stylesheet" href="/css/main.css">
+	<link rel="stylesheet" href="bower_components/uib/dist/ui-bootstrap-csp.css">
+    <link rel="stylesheet" href="css/main.css">
     <link rel="icon" type="image/x-icon" href="favicon.ico" >
 	<!--/CSS -->
 
 	<!--JS-->
-    <script type="text/javascript" src="/bower_components/jquery/dist/jquery.js"></script>
-    <script type="text/javascript" src="/bower_components/bootstrap/dist/js/bootstrap.js"></script>
-    <script type="text/javascript" src="/bower_components/angular/angular.js"></script>
-    <script type="text/javascript" src="/bower_components/angular-route/angular-route.js"></script>
-    <script type="text/javascript" src="/bower_components/angular-animate/angular-animate.min.js"></script>
-    <script type="text/javascript" src="/bower_components/a0-angular-storage/dist/angular-storage.js"></script>
+    <script type="text/javascript" src="bower_components/jquery/dist/jquery.js"></script>
+    <script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script type="text/javascript" src="bower_components/angular/angular.js"></script>
+    <script type="text/javascript" src="bower_components/angular-route/angular-route.js"></script>
+    <script type="text/javascript" src="bower_components/angular-animate/angular-animate.min.js"></script>
+    <script type="text/javascript" src="bower_components/a0-angular-storage/dist/angular-storage.js"></script>
 	<script src="//angular-ui.github.io/bootstrap/ui-bootstrap-tpls-1.3.2.js"></script>
 	<script data-require="angular-messages.js@*" data-semver="1.3.0-beta.5" src="https://code.angularjs.org/1.3.0-beta.15/angular-messages.js"></script>
 	<!--/JS-->
@@ -40,7 +40,7 @@
 		<div class="container">
 			<!--navbar-header [burger menu] -->
 			<div class="navbar-header">			
-				<a class="navbar-brand" href="/"><img id="logo" src="images/logo.png" alt="Logo"></a>
+				<a class="navbar-brand" href="."><img id="logo" src="images/logo.png" alt="Logo"></a>
 				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
@@ -52,16 +52,16 @@
 			<!-- navbar-collapse -->
 			<div class="collapse navbar-collapse " id="myNavbar" ng-controller="NavBarController">
 				<ul class="nav navbar-nav navbar-right">
-					<li ng-class="{ active: isActive('/') }"><a href="/">Home</a></li>
-					<li ng-class="{ active: isActive('/credit-score') }"><a ui-route ng-href ="/credit-score" data-target="navbar-collapse" data-toggle="collapse">Credit Score</a></li>
-					<li ng-class="{ active: isActive('/isas') }"><a href="/isas" data-target="navbar-collapse" data-toggle="collapse">ISAs</a></li>
-					<li ng-class="{ active: isActive('/money-saving-tips') }"><a href="/money-saving-tips" data-target="navbar-collapse" data-toggle="collapse">Money-Saving Tips</a></li>
+					<li ng-class="{ active: isActive('.') }"><a href="/">Home</a></li>
+					<li ng-class="{ active: isActive('credit-score') }"><a ui-route ng-href ="/credit-score" data-target="navbar-collapse" data-toggle="collapse">Credit Score</a></li>
+					<li ng-class="{ active: isActive('isas') }"><a href="/isas" data-target="navbar-collapse" data-toggle="collapse">ISAs</a></li>
+					<li ng-class="{ active: isActive('money-saving-tips') }"><a href="/money-saving-tips" data-target="navbar-collapse" data-toggle="collapse">Money-Saving Tips</a></li>
 					<li class="dropdown ">
 						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Account<span class="caret"></span></a>
 						<ul class="dropdown-menu">
-							<li ng-class="{ active: isActive('/accounts/register') }"><a href="/accounts/register" data-target="navbar-collapse" data-toggle="collapse">Register</a></li>
-							<li ng-class="{ active: isActive('/accounts/login') }"><a href="/accounts/login" data-target="navbar-collapse" data-toggle="collapse">Login</a></li>
-							<li ng-class="{ active: isActive('/accounts/logout') }"><a href="/accounts/logout" data-target="navbar-collapse" data-toggle="collapse">Logout</a></li>
+							<li ng-class="{ active: isActive('accounts/register') }"><a href="/accounts/register" data-target="navbar-collapse" data-toggle="collapse">Register</a></li>
+							<li ng-class="{ active: isActive('accounts/login') }"><a href="/accounts/login" data-target="navbar-collapse" data-toggle="collapse">Login</a></li>
+							<li ng-class="{ active: isActive('accounts/logout') }"><a href="/accounts/logout" data-target="navbar-collapse" data-toggle="collapse">Logout</a></li>
 						</ul>
 					</li>
 				</ul>				
@@ -91,11 +91,11 @@
 	<!-- / main -->
 
 	<!-- JS -->
-	<script src='/js/app.js'></script>
-	<script src='/js/controller.js'></script>
-	<script src='/js/service.js'></script>
-	<script src='/js/directive.js'></script>
-	<script src='/js/custom.js'></script>
+	<script src='js/app.js'></script>
+	<script src='js/controller.js'></script>
+	<script src='js/service.js'></script>
+	<script src='js/directive.js'></script>
+	<script src='js/custom.js'></script>
 	<!-- /JS -->
 
 </body>
