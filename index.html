@@ -3,7 +3,7 @@
 
 <head>
 	<!-- Base Meta Tags -->
-	<base href="/"> <!--required for Angular HTML5 mode-->
+	<base href="/MoneyTree/"> <!-- all paths will be relative to the angular-todo path in GitHub Pages -->
 	<title>Money Tree</title>	
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,7 +12,7 @@
 	<meta name="author" content="Money Tree">
 
 	<!-- CSS -->
-	<link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
 	<link rel="stylesheet" href="/bower_components/angular-bootstrap/ui-bootstrap-csp.css">
@@ -40,7 +40,7 @@
 		<div class="container">
 			<!--navbar-header [burger menu] -->
 			<div class="navbar-header">			
-				<a class="navbar-brand" href="/"><img id="logo" src="images/logo.png" alt="Logo"></a>
+				<a class="navbar-brand" href="."><img id="logo" src="images/logo.png" alt="Logo"></a>
 				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
@@ -52,16 +52,16 @@
 			<!-- navbar-collapse -->
 			<div class="collapse navbar-collapse " id="myNavbar" ng-controller="NavBarController">
 				<ul class="nav navbar-nav navbar-right">
-					<li ng-class="{ active: isActive('/') }"><a href="/">Home</a></li>
-					<li ng-class="{ active: isActive('/credit-score') }"><a ui-route ng-href ="/credit-score" data-target="navbar-collapse" data-toggle="collapse">Credit Score</a></li>
-					<li ng-class="{ active: isActive('/isas') }"><a href="/isas" data-target="navbar-collapse" data-toggle="collapse">ISAs</a></li>
-					<li ng-class="{ active: isActive('/money-saving-tips') }"><a href="/money-saving-tips" data-target="navbar-collapse" data-toggle="collapse">Money-Saving Tips</a></li>
+					<li ng-class="{ active: isActive('/') }"><a href=".">Home</a></li>
+					<li ng-class="{ active: isActive('/credit-score') }"><a ui-route ng-href ="credit-score" data-target="navbar-collapse" data-toggle="collapse">Credit Score</a></li>
+					<li ng-class="{ active: isActive('/isas') }"><a href="isas" data-target="navbar-collapse" data-toggle="collapse">ISAs</a></li>
+					<li ng-class="{ active: isActive('/money-saving-tips') }"><a href="money-saving-tips" data-target="navbar-collapse" data-toggle="collapse">Money-Saving Tips</a></li>
 					<li class="dropdown ">
 						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Account<span class="caret"></span></a>
 						<ul class="dropdown-menu">
-							<li ng-class="{ active: isActive('/accounts/register') }"><a href="/accounts/register" data-target="navbar-collapse" data-toggle="collapse">Register</a></li>
-							<li ng-class="{ active: isActive('/accounts/login') }"><a href="/accounts/login" data-target="navbar-collapse" data-toggle="collapse">Login</a></li>
-							<li ng-class="{ active: isActive('/accounts/logout') }"><a href="/accounts/logout" data-target="navbar-collapse" data-toggle="collapse">Logout</a></li>
+							<li ng-class="{ active: isActive('/accounts/register') }"><a href="accounts/register" data-target="navbar-collapse" data-toggle="collapse">Register</a></li>
+							<li ng-class="{ active: isActive('/accounts/login') }"><a href="accounts/login" data-target="navbar-collapse" data-toggle="collapse">Login</a></li>
+							<li ng-class="{ active: isActive('/accounts/logout') }"><a href="accounts/logout" data-target="navbar-collapse" data-toggle="collapse">Logout</a></li>
 						</ul>
 					</li>
 				</ul>				
@@ -91,11 +91,11 @@
 	<!-- / main -->
 
 	<!-- JS -->
-	<script src='/js/app.js'></script>
-	<script src='/js/controller.js'></script>
-	<script src='/js/service.js'></script>
-	<script src='/js/directive.js'></script>
-	<script src='/js/custom.js'></script>
+	<script src='js/app.js'></script>
+	<script src='js/controller.js'></script>
+	<script src='js/service.js'></script>
+	<script src='js/directive.js'></script>
+	<script src='js/custom.js'></script>
 	<!-- /JS -->
 
 </body>
