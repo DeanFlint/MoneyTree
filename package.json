@@ -1,0 +1,30 @@
+{
+  "name": "moneytree",
+  "version": "1.0.0",
+  "description": "module 1",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DeanFlint/MoneyTree.git"
+  },
+  "author": "dean flint",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DeanFlint/MoneyTree/issues"
+  },
+  "homepage": "https://github.com/DeanFlint/MoneyTree#readme",
+  "dependencies": {
+    "angular": "1.6.4",
+    "bootstrap": "3.3.7",
+    "angular-route": "1.6.4"
+  },
+  "devDependencies": {
+    "jasmine-core": "2.4.1",
+    "karma": "1.2.0",
+    "karma-chrome-launcher": "2.0.0",
+    "karma-jasmine": "1.0.2"
+  }
+}

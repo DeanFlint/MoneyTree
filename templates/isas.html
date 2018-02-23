@@ -1,0 +1,117 @@
+<section class="container">
+
+	<div class="col-md-5 content">
+		<h4 class="title">ISAs</h4>
+		<p>An ISA (Individual Savings Account) is a tax-free way to save or invest. If you're starting to think about saving or investing, ISAs could be a good place to begin. On other savings accounts, you may have to pay income tax* on the interest you earn. The interest on a cash ISA is free from tax, so all the interest you earn, you keep. Stocks &amp; Shares ISAs also have tax benefits which we've explained in more detail in the tab below.</p>
+		<p>Each tax year, which starts on 6 April, you get a new ISA allowance. For the tax year 2017/18, the ISA allowance is &#163;20,000. Nationwide offers cash, Stocks &amp; Shares and Junior ISAs (where there is an annual allowance of &#163;4,128). You can also save into an Innovative Finance ISA or Lifetime ISA (with an annual allowance of &#163;4,000), although Nationwide doesn’t offer these products.</p>			
+		
+		<div class="podcast">					
+			<audio class="audioclip" controls>
+			<source src="audio/ftmoneyshow.mp3" type="audio/mp3">
+			</audio>
+			<p>FT Money Show presenter Claer and guests discuss the growing family of tax free Isas - and how your whole family can use them to invest.</p>	
+		</div>
+	</div>
+
+	<div class="col-md-1 content">
+	</div>
+
+	<div class="col-md-6 content calcarea">
+		<form ng-controller="ISAsController" name="isacalc" >
+
+		<h4 class="sectiontitle"> ISA Calculator </h4>
+		
+			<div class="isacal">  
+			
+				<div class="isacalrow"> 
+				
+					<div class="isacalcell">
+						<h5 class="calcheadings">Annual Investment (&#163;)<a href="" title="Enter an amount to the nearest &#163;100" data-toggle="popover" data-trigger="hover"> (?)</a></h5> 
+					</div>
+
+					<div class="isacalcell">
+						<h5 class="calcheadings">Number of Years<a href="" title="Enter the number of years you wish to invest into your ISA" data-toggle="popover" data-trigger="hover"> (?)</a></h5>
+					</div>
+
+					<div class="isacalcell">
+						<h5 class="calcheadings">Growth Rate<a href="" title="This represents the predicted compounded annualized rate of growth of a company's value." data-toggle="popover" data-trigger="hover"> (?)</a></h5>
+					</div>
+
+				</div>
+
+				<div class="isacalrow"> 
+
+					<div class="isacalcell">
+						<span class="inputcurrency"><input class = "calc" type="number" ng-model="amount" name="amount" step="100" min="100" max="20000" integer/></span>
+						<p class="error" ng-show="isacalc.amount.$error.integer">This amount needs to be to the nearest &#163;100</p>
+					    <p class="error" ng-show="isacalc.amount.$error.min || isacalc.amount.$error.max">Minimum value = &#163;100, Maximum value = &#163;20,000.</p>
+					</div>
+
+					<div class="isacalcell">
+						<span class="inputyears"><input type="number" name="time" class="calc" ng-model="time" min="1" max="20" integer/></span>
+						<p class="error" ng-show="isacalc.time.$error.integer">This needs to be a whole number.</p>
+						<p class="error" ng-show="isacalc.time.$error.min || isacalc.time.$error.max">Minimum years = 1, Maximum years = 20.</p>
+					</div>
+
+					<div class="isacalcell">
+						<input type="radio" name="rate" ng-model="rate" value="1.02">Low (2%)<br /></input>
+						<input type="radio" name="rate" ng-model="rate" value="1.05">Medium (5%)<br /></input>
+						<input type="radio" name="rate" ng-model="rate" value="1.07">High (7%)<br /></input>
+					</div>
+
+				</div>
+
+			</div>	
+				
+			<div class="results">
+
+				<h5 class="sectiontitle"> Results </h5>
+
+				<p>Your monthly investment would be <strong>{{paymentstoMonths() | currency:"&#163;":0}}</strong> over a duration of <strong>{{yearstomonths()}}</strong> months. </p>
+
+				<div class="isacal">
+
+					<div class="isacalrow"> 
+					
+						<div class="isacalcell">
+							<p class="calcheadings">Your total contribution:</p>
+						</div>
+
+						<div class="isacalcell">
+							<p class="calcheadings">Total interest:</p>
+						</div>
+
+						<div class="isacalcell">
+							<p class="calcheadings">Total ISA value:</p>
+						</div>
+
+					</div>
+
+					<div class="isacalrow"> 
+
+						<div class="isacalcell values">
+							<p>{{contribution() | currency:"&#163;":0}}</p>	
+						</div>
+
+						<div class="isacalcell values">
+							<p>{{interestgain() | currency:"&#163;":0}}</p>
+						</div>
+
+						<div class="isacalcell values">
+							<p>{{investment() | currency:"&#163;":0}}</p>
+						</div>
+
+					</div>
+
+				</div>
+
+			</div>
+			
+		</form>
+
+	</div>
+
+</section>
+
+
+			

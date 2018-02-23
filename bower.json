@@ -1,0 +1,28 @@
+{
+  "name": "moneytree",
+  "description": "module 1",
+  "main": "index.js",
+  "authors": [
+    "dean flint"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/DeanFlint/MoneyTree",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.6.4",
+    "bootstrap": "^3.3.7",
+    "angular-route": "^1.6.4",
+    "a0-angular-storage": "^0.0.15",
+    "angular-animate": "^1.6.9",
+    "angular-bootstrap": "1.3.2"
+  },
+  "devDependencies": {
+    "angular-mocks": "^1.6.5"
+  }
+}
