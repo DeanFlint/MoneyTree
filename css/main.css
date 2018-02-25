@@ -13,6 +13,7 @@ footer { background-color: #C7E8B7; color: white; margin-top:50px; padding: 15px
 =============*/
 .header-top { padding-top: 20px; }
 .header-left {margin: 2% 0; text-align:center;}
+.header-right { }
 .header-image { height: auto; width: 250px; margin-top: 20px;}
 .header-image-isa {height: auto; width: 120px; margin-top: 20px;}
 
@@ -20,20 +21,19 @@ footer { background-color: #C7E8B7; color: white; margin-top:50px; padding: 15px
 	Nav
 =============*/
 .nav li {margin: 3px}
-.nav li a {padding: 5px 5px; display: inline;}
-
+.nav li a {padding: 5px 5px}
 .navbar {margin-bottom: 0;}
 .navbar-right {margin:20px 5%;}
 .navbar-brand {padding: 10px 15px;}
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover{ background-color:hsla(120, 22%, 65%, 0.28);}
 .container .navbar-collapse { margin-right: 0; margin-left:0;}
 .navbar-toggle {margin-top: 30px;}
-.navbar-default {border: none;}
+#myNavbar {}
 
 /*=============
 	logo
 =============*/
-#logo {height: 50px; width: 275px;}
+#logo {height: 60px; width: 275px;}
 
 /*=============
 	carousel
@@ -57,7 +57,7 @@ footer { background-color: #C7E8B7; color: white; margin-top:50px; padding: 15px
 /*=============
 	credit-score
 =============*/
-.credit-score {padding:0 5%; height:100%;}
+.credit-score {padding:0 5%; height:100%;  }
 .cs-iframe { height:210px; width:100%; margin-top: 22%; }
 .video-blurb {text-align:center; font-style: italic;}
 
@@ -80,13 +80,13 @@ footer { background-color: #C7E8B7; color: white; margin-top:50px; padding: 15px
 .calc { text-align:center; border-radius: 5px; width: 80%;}
 .error {color:red;}
 .inputyears {padding-left:10px;}
-.inputcurrency::before {float: left; padding: 3px 4px 3px 3px; }
+span.inputcurrency::before {float: left; padding: 3px 4px 3px 3px; }
 table {width: 100%;}
 tr {min-height: 50px;}
 td {padding: 5px;}
 th {padding-left:20px;  padding-top: 20px;}
 .contactform {background-color: #f3f3f3; margin-top: 100px; padding: 25px; border-radius: 20px; text-align: center;}
-.alert-danger {border: none; margin: 0 20px;}
+.alert-danger {border: none; width: 175px;}
 .feedbackinput {width:90%;}
 .feedbackarea {width: 90%; min-height: 150px;}
 .isacal { width:100%; display:table; }
@@ -97,7 +97,6 @@ th {padding-left:20px;  padding-top: 20px;}
 .results {text-align:center;}
 .values {font-size: 2em;}
 .calcarea {border-radius: 20px; background-color: #f3f3f3; margin-top: 75px;}
-.alert { padding: 5px;}
 
 /*=============
 	audio
@@ -118,7 +117,7 @@ th {padding-left:20px;  padding-top: 20px;}
 }
 
 /*======= Tablets=================*/
-@media screen and (max-width: 767px)
+@media screen and (max-width: 767px) 
 {   
 /*=============
 	Nav
@@ -140,7 +139,7 @@ th {padding-left:20px;  padding-top: 20px;}
 	credit-score
 =============*/
 
-	.credit-score {height: 100%; width: 75%; margin: auto;}
+	.credit-score {padding:2%; height: 100%; width: 75%; margin: auto;}}
 	.cs-iframe {height:250px; width:100%; margin-top: 0}
 }
 
