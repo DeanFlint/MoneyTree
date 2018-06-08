@@ -61,27 +61,6 @@ Some the tech used includes:
 
 Click [here](../tests) to view the my testing of this project.
 
-
-## Built With
-
-* [AngularJS](https://angularjs.org/)
-    - I used **AngularJS** to handle page routing, we also use it to make calls to the REST API and build custom directives
-* [Bootstrap](http://getbootstrap.com/)
-    - I used **Bootstrap** to give my project a simple, responsive layout
-* [npm](https://www.npmjs.com/)
-    - I used **npm** to help manage some of the dependencies in the application
-* [bower](https://bower.io/)
-    - **Bower** is used to manage the installation of the libraries and frameworks
-* [font-awesome](http://fontawesome.io/)
-    - I used **font-awesome** to include images for icons.
-* [Google Fonts](https://fonts.google.com/) 
-    - **Google Fonts** is used to style the text in my site.
-* [Angular Animate](https://github.com/angular/bower-angular-animate)
-    - I used the Bower package for the AngularJS animation module to implement tooltips on my forms.
-* [UI Bootstrap] (https://angular-ui.github.io/bootstrap/)
-    -Used for the accordion on the Money-Saving Tips page.
-
-
 ## Contributing
 
 Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
