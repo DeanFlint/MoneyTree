@@ -11,7 +11,8 @@ authenicate the users) and once logged in, they will remain so until they decide
 to logout. The website is styled with bootstrap and the data provided is consumed 
 from an API hosted on Heroku using AngularJS.
 
-### Prerequisites
+
+### Built with...
 
 Some the tech used includes:
 
@@ -57,9 +58,15 @@ Some the tech used includes:
 7. Make changes to the code and if you think it belongs in here then just submit a pull request
 
 
-## Testing
+### Testing
 
 Click [here](../tests) to view the my testing of this project.
+
+
+### Planning
+
+Click [here](../wireframe) to view the wireframes created for this project.
+
 
 ## Contributing
 
@@ -69,11 +76,6 @@ Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c6
 ## Authors
 
 * **Dean Flint** - *Initial work* - [PurpleBooth](https://github.com/DeanFlint)
-
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
 
 
 ## Acknowledgments
