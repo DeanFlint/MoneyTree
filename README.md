@@ -1,6 +1,7 @@
 # MoneyTree - Project 1
 
-## Getting Started
+
+### Description
 
 This website is aimed to educate young adults about ISAs, Money Saving tips and Credit Scores. 
 This website has an ISA Calculator which will show them how much they can make whilst saving in a tax free ISA. 
